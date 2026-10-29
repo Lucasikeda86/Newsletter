@@ -1,0 +1,103 @@
+/* Tema claro / escuro */​
+:root {
+    --bg: #FFF;
+    --texto: #111;
+    --borda: #e5e7eb;
+    --caixa: #f8fafc;
+    --acao: #2563eb;
+}
+
+[data-tema="escuro"] {
+    --bg: #0b1220;
+    --texto: #e5e7eb;
+    --borda: #1f2937;
+    --caixa: #111827;
+    --acao: #38bdf8;
+}
+
+/* Estilos padrão */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    color: var(--texto);
+}
+
+.topo {
+    border-bottom: 1px solid var(--borda);
+}
+
+.topo .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 16px; 
+}
+
+.caixa {
+    border: 1px solid var(--borda);
+    background-color: var(--caixa);
+    border-radius: 8px; 
+    padding: 32px 16px; 
+    width: 80%; 
+    margin: 24px auto; 
+}
+
+h1 {
+    margin-bottom: 8px;
+    font-size: 25.6px; 
+}
+
+p {
+    margin: 16px 0; 
+}
+
+form {
+    display: grid;
+    gap: 8px; 
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    padding: 11.2px 14.4px; 
+    border: 1px solid var(--borda);
+    border-radius: 8px; 
+    background-color: var(--bg);
+    color: var(--texto);
+}
+
+.btn {
+    padding: 9.6px 14.4px; 
+    border: 1px solid var(--borda);
+    background-color: var(--bg);
+    color: var(--texto);
+    border-radius: 8px; 
+    cursor: pointer;
+    max-width: 200px;
+}
+
+.btn.primario {
+    margin-top: 16px; 
+    background-color: var(--acao);
+    color: #FFF;
+}
+
+.rodape {
+    border-top: 1px solid var(--borda);
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+    margin-top: auto;
+}
